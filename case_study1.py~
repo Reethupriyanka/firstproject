@@ -1,7 +1,6 @@
 n1 = int(input("Enter the number of rows in a matrix"))
 n2 = int(input("Enter the number of colums in a matrix"))
 a = []
-c=0
 for i in range (n1):
 	a.append(input())
 print("Across words")
