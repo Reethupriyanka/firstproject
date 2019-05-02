@@ -1,0 +1,16 @@
+count = 0
+def isprime(num):
+	for i in range(1,num):
+		for j in range(1,i+1):
+			if i % j == 0:
+				count=count+1
+		if count==2:
+			return True
+		return False
+a = 0
+k = 1
+while (k>0):
+	if isprime(k):
+		a = a+1
+if a==1001:
+	print(k)

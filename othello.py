@@ -1,0 +1,6 @@
+n=int(input())
+li=[[0 for i in range(n)]for j in range(n)]
+for i in range(n):
+	for j in range(n):
+		li[i][j]=input()
+
