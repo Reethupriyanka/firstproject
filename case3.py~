@@ -3,12 +3,16 @@ while(get > 0):
     c = 0       
     l1=[]
     for p in range(5):
+        if(get==0):break
         l=[x for x in input()]
         l1.append(l)
-	   for i in l:
-			if(i=='Z'):(get,c=0,1)
+        for i in l:
+            if(i=='Z'):
+                get=0
+                c=1
     if(c == 0):
-	l2=[x for x in input()]
+        print('enter direction')
+        l2=[x for x in input()]
         for i in range(5):
             for j in range(5):
                 for k in l2:
@@ -30,14 +34,14 @@ while(get > 0):
                                 l1[i+1][j],l1[i][j] = l1[i][j],l1[i+1][j]
                                 i,j=i+1,j
                             if(k == '0'):
-				print("puzzle","#",get)
+                                print("puzzle#",get)
                                 for i in range(5):
                                     for j in range(5):
                                         print(l1[i][j], end=' ')
                                     print()
                                     c = 1
-				    get=get+1
-
-
+                                get=get+1
    
+
+
    
